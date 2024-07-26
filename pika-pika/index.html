@@ -1,15 +1,15 @@
+
 <!DOCTYPE html>
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
   <title>Pika Pika!</title>
-  <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale = 1.0, user-scalable = no">
 <style>
     *{ 
            margin: 0; 
       padding: 0 
     }
-    body {overflow: hidden}
+    body {overflow: hidden;}
     #PikaPika {
   padding: 0px; box-sizing: border-box; 
   margin: 0px;
@@ -39,6 +39,12 @@
   bottom:10px;
 }
 
+#logo {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+
+}
 
 #badge {
   width:190px;
@@ -68,10 +74,9 @@
 	<canvas id="canvas" width="1024" height="720"></canvas>
 </div>
 <canvas id="canvas1" ></canvas>
- <img id="badgeSound" src="./Button_Sound_Black.svg">
-<img id="badge" src="./Button_Hold_Black.svg">
+ <img id="badgeSound" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1524180/Button_Sound_Black.svg">
+<img id="badge" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1524180/Button_Hold_Black.svg">
 <a href="https://createjs.com/" target="_blank" style="display: none;"><img id="logo" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1524180/createjs-badge-black.png"></a>
-<script src='/createjs.js'></script>
 <script src='https://code.createjs.com/1.0.0/createjs.js'></script>
 <script>
 var canvas, stage;
@@ -275,20 +280,20 @@ function blink() {
 
 function loadSounds() {
   var manifest = [
-    {id:"sound0", src:"./Pika1.mp3"},
-    {id:"sound1", src:"./Pika2.mp3"},
-    {id:"sound2", src:"./Pika3.mp3"},
-    {id:"sound3", src:"./Pika4.mp3"},
-    {id:"sound4", src:"./Pika5.mp3"},
-    {id:"sound5", src:"./Pika6.mp3"},
-    {id:"sound6", src:"./Pika7.mp3"},
-    {id:"sound7", src:"./Pika8.mp3"},
-    {id:"sound8", src:"./Pika9.mp3"},
-    {id:"PikaPika", src:"./PikaPika.png"},
-    {id:"Pika", src:"./Pika.png"},
-    {id:"Pikachu", src:"./Pikachu.png"},
-    {id:"Pika_chu", src:"./Pika_chu.png"},
-    {id:"huh", src:"./huh.png"}
+    {id:"sound0", src:"https://s3-us-west-2.amazonaws.com/s.cdpn.io/1524180/Pika1.mp3"},
+    {id:"sound1", src:"https://s3-us-west-2.amazonaws.com/s.cdpn.io/1524180/Pika2.mp3"},
+    {id:"sound2", src:"https://s3-us-west-2.amazonaws.com/s.cdpn.io/1524180/Pika3.mp3"},
+    {id:"sound3", src:"https://s3-us-west-2.amazonaws.com/s.cdpn.io/1524180/Pika4.mp3"},
+    {id:"sound4", src:"https://s3-us-west-2.amazonaws.com/s.cdpn.io/1524180/Pika5.mp3"},
+    {id:"sound5", src:"https://s3-us-west-2.amazonaws.com/s.cdpn.io/1524180/Pika6.mp3"},
+    {id:"sound6", src:"https://s3-us-west-2.amazonaws.com/s.cdpn.io/1524180/Pika7.mp3"},
+    {id:"sound7", src:"https://s3-us-west-2.amazonaws.com/s.cdpn.io/1524180/Pika8.mp3"},
+    {id:"sound8", src:"https://s3-us-west-2.amazonaws.com/s.cdpn.io/1524180/Pika9.mp3"},
+    {id:"PikaPika", src:"https://s3-us-west-2.amazonaws.com/s.cdpn.io/1524180/PikaPika.png"},
+    {id:"Pika", src:"https://s3-us-west-2.amazonaws.com/s.cdpn.io/1524180/Pika.png"},
+    {id:"Pikachu", src:"https://s3-us-west-2.amazonaws.com/s.cdpn.io/1524180/Pikachu.png"},
+    {id:"Pika_chu", src:"https://s3-us-west-2.amazonaws.com/s.cdpn.io/1524180/Pika_chu.png"},
+    {id:"huh", src:"https://s3-us-west-2.amazonaws.com/s.cdpn.io/1524180/huh.png"}
   ]
   queue = new createjs.LoadQueue(true);
   queue.installPlugin(createjs.Sound);
